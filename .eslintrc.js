@@ -12,8 +12,13 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'semi': [2, 'always'],
-    'prefer-const': 'error'
+    'semi': ['error', 'always'],
+    'prefer-const': ['error', {
+      'destructuring': 'any',
+      'ignoreReadBeforeAssign': false
+    }],
+    'space-before-function-paren': ['error', 'never'],
+    'object-curly-spacing': ['error', 'never']
   },
   globals: {}
 }
