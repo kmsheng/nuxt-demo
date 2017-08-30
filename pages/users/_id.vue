@@ -12,27 +12,26 @@
     </nuxt-link>
   </section>
 </template>
-
 <script>
-import axios from '~/plugins/axios'
+import axios from '~/plugins/axios';
 
 export default {
   name: 'id',
-  asyncData ({ params, error }) {
+  asyncData({params, error}) {
     return axios.get('/api/users/' + params.id)
       .then((res) => {
-        return { user: res.data }
+        return {user: res.data};
       })
       .catch((e) => {
-        error({ statusCode: 404, message: 'User not found' })
-      })
+        error({statusCode: 404, message: 'User not found'});
+      });
   },
-  head () {
+  head() {
     return {
       title: `User: ${this.user.name}`
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
