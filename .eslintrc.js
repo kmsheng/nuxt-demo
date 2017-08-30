@@ -18,7 +18,9 @@ module.exports = {
       'ignoreReadBeforeAssign': false
     }],
     'space-before-function-paren': ['error', 'never'],
-    'object-curly-spacing': ['error', 'never']
+    'object-curly-spacing': ['error', 'never'],
+    'no-unused-vars': 1,
+    'yoda': ['error', 'always']
   },
   globals: {}
 }
