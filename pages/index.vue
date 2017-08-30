@@ -26,18 +26,15 @@ export default {
 </script>
 
 <style scoped>
-.title
-{
-  margin: 30px 0;
-}
-.users
-{
+
+.links {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.user
-{
-  margin: 10px 0;
+
+.links > li > a {
+  display: inline-block;
+  margin: 0 14px;
 }
 </style>
