@@ -3,7 +3,7 @@
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1>Todo List</h1>
     <ul class="todos">
-      <li>item</li>
+      <li v-for="todo in todos">{{todo.text}}</li>
     </ul>
   </section>
 </template>
